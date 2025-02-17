@@ -15,24 +15,21 @@ const Navbar = ({ isDarkMode, toggleDarkMode }: NavbarProps) => {
   const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
 
   const navLinks = [
-    { href: '/', label: 'Home' }, // Add home link
+    { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
     { href: '/projects', label: 'Projects' },
     { href: '/contact', label: 'Contact' }
   ];
 
-  // Update isActive to handle root path
+  // Normalize paths to prevent issues with trailing slashes
   const isActive = (path: string) => {
-    const currentPath = pathname || '';
-    const targetPath = `${basePath}${path}`;
-    return path === '/' ? currentPath === basePath || currentPath === `${basePath}/` : currentPath === targetPath;
+    const currentPath = pathname?.replace(/\/$/, '') || ''; // Remove trailing slashes
+    const targetPath = `${basePath}${path}`.replace(/\/$/, ''); // Remove trailing slashes from target path
+    return currentPath === targetPath;
   };
 
   const getHref = (path: string) => {
-    // Handle root path specially
-    const base = process.env.NODE_ENV === 'production' ? '' : '';
-    return path === '/' ? base || '/' : `${base}${path}`;
-//    return "/";
+    return path === '/' ? basePath || '/' : `${basePath}${path}`;
   };
 
   return (
@@ -53,10 +50,10 @@ const Navbar = ({ isDarkMode, toggleDarkMode }: NavbarProps) => {
                 key={link.href}
                 href={getHref(link.href)}
                 className={`${
-                  isActive(link.href) 
-                    ? 'text-blue-600 dark:text-blue-400' 
+                  isActive(link.href)
+                    ? 'text-blue-600 dark:text-blue-400 font-semibold border-b-2 border-blue-600 dark:border-blue-400' 
                     : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
-                } transition-colors`}
+                } transition-colors px-2 pb-1`}
               >
                 {link.label}
               </Link>
@@ -89,11 +86,11 @@ const Navbar = ({ isDarkMode, toggleDarkMode }: NavbarProps) => {
                 <Link
                   key={link.href}
                   href={getHref(link.href)}
-                  className={`block py-2 ${
+                  className={`block py-2 text-center ${
                     isActive(link.href)
-                      ? 'text-blue-600 dark:text-blue-400'
-                      : 'text-gray-600 dark:text-gray-300'
-                  }`}
+                      ? 'text-blue-600 dark:text-blue-400 font-semibold border-b-2 border-blue-600 dark:border-blue-400' 
+                      : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+                  } transition-colors`}
                   onClick={() => setIsOpen(false)}
                 >
                   {link.label}
