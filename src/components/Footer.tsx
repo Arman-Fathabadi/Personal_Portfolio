@@ -11,7 +11,7 @@ const Footer = () => {
         </p>
         <div className="mt-4 flex justify-center space-x-4">
           <a
-            href="https://github.com/Arman-Fathalian" 
+            href="https://github.com/Arman-Fathabadi/" 
             target="_blank"
             rel="noopener noreferrer"
             title="Visit my GitHub profile"
@@ -20,7 +20,7 @@ const Footer = () => {
             <FaGithub className="h-6 w-6" />
           </a>
           <a
-            href="https://www.linkedin.com/in/arman-fathalian/" 
+            href="https://www.linkedin.com/in/arman-fathabadi/" 
             target="_blank"
             rel="noopener noreferrer"
             title="Visit my LinkedIn profile"

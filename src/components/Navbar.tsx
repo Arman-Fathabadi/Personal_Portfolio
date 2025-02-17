@@ -12,7 +12,7 @@ interface NavbarProps {
 const Navbar = ({ isDarkMode, toggleDarkMode }: NavbarProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
-  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
+  const basePath = process.env.NODE_ENV === 'production' ? '' : '';
 
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -23,8 +23,8 @@ const Navbar = ({ isDarkMode, toggleDarkMode }: NavbarProps) => {
 
   // Normalize paths to prevent issues with trailing slashes
   const isActive = (path: string) => {
-    const currentPath = pathname?.replace(/\/$/, '') || ''; // Remove trailing slashes
-    const targetPath = `${basePath}${path}`.replace(/\/$/, ''); // Remove trailing slashes from target path
+    const currentPath = pathname?.replace(/\/$/, '') || '';
+    const targetPath = `${basePath}${path}`.replace(/\/$/, '');
     return currentPath === targetPath;
   };
 
