@@ -1,23 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable static exports
-  output: 'export',
-  // Disable middleware features for static export
-  skipMiddlewareUrlNormalize: true,
-  skipTrailingSlashRedirect: true,
+  output: 'export',  // Ensures static export
+  distDir: 'dist',   // Output files to 'dist' folder
+  trailingSlash: true, 
   images: {
-    unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
+    unoptimized: true,  // Required for static exports
   },
-  // Add base path for GitHub Pages deployment
-  basePath: process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '',
-  distDir: 'dist',
-  trailingSlash: true
 };
 
 export default nextConfig;

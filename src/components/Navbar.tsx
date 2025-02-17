@@ -30,8 +30,9 @@ const Navbar = ({ isDarkMode, toggleDarkMode }: NavbarProps) => {
 
   const getHref = (path: string) => {
     // Handle root path specially
-    const base = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
+    const base = process.env.NODE_ENV === 'production' ? '' : '';
     return path === '/' ? base || '/' : `${base}${path}`;
+//    return "/";
   };
 
   return (
