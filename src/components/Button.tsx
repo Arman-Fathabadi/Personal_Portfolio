@@ -10,7 +10,7 @@ interface ButtonProps {
 }
 
 const Button = ({ children, onClick, href, type = 'button' }: ButtonProps) => {
-  const basePath = process.env.NODE_ENV === 'production' ? '/personal-portfolio' : '';
+  const basePath = process.env.NODE_ENV === 'production' ? '' : '';
 
   const content = (
     <motion.button
