@@ -36,7 +36,7 @@ export default function Contact() {
             <p className="text-lg text-gray-600 dark:text-gray-300">
               Email: {' '}
               <a 
-                href="mailto:your.email@example.com" 
+                href="armanfathabadi99@gmail.com" 
                 className="text-blue-500 hover:text-blue-600 transition-colors"
               >
                 your.email@example.com
@@ -45,7 +45,7 @@ export default function Contact() {
             <p className="text-lg text-gray-600 dark:text-gray-300">
               LinkedIn: {' '}
               <a 
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/arman-fathabadi/"
                 className="text-blue-500 hover:text-blue-600 transition-colors"
                 target="_blank"
                 rel="noopener noreferrer"

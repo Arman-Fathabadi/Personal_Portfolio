@@ -1,5 +1,20 @@
 {
   "pages": {
+    "/not-found": [
+      "static/chunks/webpack-71d2f76d8a2f76a7.js",
+      "static/chunks/4bd1b696-1d398b649b281e55.js",
+      "static/chunks/517-fe3fc31248a5a0c6.js",
+      "static/chunks/main-app-edb506d2774519b9.js",
+      "static/chunks/173-22ed0ab9955039fb.js",
+      "static/chunks/app/not-found-3ec0be288d0c46e1.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack-71d2f76d8a2f76a7.js",
+      "static/chunks/4bd1b696-1d398b649b281e55.js",
+      "static/chunks/517-fe3fc31248a5a0c6.js",
+      "static/chunks/main-app-edb506d2774519b9.js",
+      "static/chunks/app/_not-found/page-d0fbfad21229a527.js"
+    ],
     "/layout": [
       "static/chunks/webpack-71d2f76d8a2f76a7.js",
       "static/chunks/4bd1b696-1d398b649b281e55.js",
@@ -18,15 +33,7 @@
       "static/chunks/687-9a82df39fdf9c6f0.js",
       "static/chunks/173-22ed0ab9955039fb.js",
       "static/chunks/838-82061cdf239f441a.js",
-      "static/chunks/app/template-e81ed9c7b40c56b7.js"
-    ],
-    "/not-found": [
-      "static/chunks/webpack-71d2f76d8a2f76a7.js",
-      "static/chunks/4bd1b696-1d398b649b281e55.js",
-      "static/chunks/517-fe3fc31248a5a0c6.js",
-      "static/chunks/main-app-edb506d2774519b9.js",
-      "static/chunks/173-22ed0ab9955039fb.js",
-      "static/chunks/app/not-found-3ec0be288d0c46e1.js"
+      "static/chunks/app/template-a7260866d322e0f9.js"
     ],
     "/about/page": [
       "static/chunks/webpack-71d2f76d8a2f76a7.js",
@@ -36,13 +43,6 @@
       "static/chunks/687-9a82df39fdf9c6f0.js",
       "static/chunks/565-0c2c1282d5b471ef.js",
       "static/chunks/app/about/page-5453da73dc140e6f.js"
-    ],
-    "/_not-found/page": [
-      "static/chunks/webpack-71d2f76d8a2f76a7.js",
-      "static/chunks/4bd1b696-1d398b649b281e55.js",
-      "static/chunks/517-fe3fc31248a5a0c6.js",
-      "static/chunks/main-app-edb506d2774519b9.js",
-      "static/chunks/app/_not-found/page-d0fbfad21229a527.js"
     ],
     "/projects/page": [
       "static/chunks/webpack-71d2f76d8a2f76a7.js",
