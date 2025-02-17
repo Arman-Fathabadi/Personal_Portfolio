@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "personal-web-1920123"
-  }
+  },
+  "targets": {
+    "personal-web-1920123": {
+      "hosting": {
+        "my-site": [
+          "arman-fathabadi"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
