@@ -36,10 +36,10 @@ export default function Contact() {
             <p className="text-lg text-gray-600 dark:text-gray-300">
               Email: {' '}
               <a 
-                href="armanfathabadi99@gmail.com" 
+                href="mailto:armanfathabadi99@gmail.com" 
                 className="text-blue-500 hover:text-blue-600 transition-colors"
               >
-                your.email@example.com
+                armanfathabadi99@gmail.com
               </a>
             </p>
             <p className="text-lg text-gray-600 dark:text-gray-300">
@@ -50,7 +50,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                linkedin.com/in/yourusername
+                https://www.linkedin.com/in/arman-fathabadi/
               </a>
             </p>
           </motion.div>
