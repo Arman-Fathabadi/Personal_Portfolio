@@ -9,8 +9,8 @@ export default function ProjectsContent() {
       title: "Personal Portfolio",
       description: "A modern portfolio website built with Next.js and Tailwind CSS",
       techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-      githubLink: "https://github.com/yourusername/personal-portfolio",
-      liveDemo: "https://your-portfolio-url.com"
+      githubLink: "https://github.com/Arman-Fathabadi/Personal_Portfolio",
+      liveDemo: "https://arman-fathabadi.web.app/"
     },
     {
       title: "Project 2",

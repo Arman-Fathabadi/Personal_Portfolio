@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Badge from '@/components/Badge';
-import { motion } from 'framer-motion';
+import Image from "next/image";
+import Badge from "@/components/Badge";
+import { motion } from "framer-motion";
 
 export default function AboutContent() {
   return (
@@ -16,10 +16,10 @@ export default function AboutContent() {
         >
           <div className="relative w-64 h-64 md:w-80 md:h-80">
             <Image
-              src="/images/profile.jpg"
+              src="/images/Arman.png" // ✅ Remove "public" from path
               alt="Arman Fathabadi"
-              fill
-              style={{ objectFit: 'cover' }}
+              width={320} // Explicit width
+              height={320} // Explicit height
               className="rounded-full shadow-deep"
               priority
             />
@@ -31,9 +31,12 @@ export default function AboutContent() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-4xl font-bold mb-6 text-gray-800 dark:text-white">About Me</h1>
+          <h1 className="text-4xl font-bold mb-6 text-gray-800 dark:text-white">
+            About Me
+          </h1>
           <p className="text-lg mb-6 text-gray-600 dark:text-gray-300 leading-relaxed">
-            Hello! I&apos;m Arman Fathabadi, a passionate software developer specializing in web development and cloud solutions.
+            Hello! I&apos;m Arman Fathabadi, a passionate software developer
+            specializing in web development and cloud solutions.
           </p>
           <div className="flex flex-wrap gap-2 justify-center md:justify-start">
             <Badge>React</Badge>
