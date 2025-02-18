@@ -13,23 +13,33 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          Welcome to My Portfolio
+          Hi,   I&apos;m Arman Fathabadi   👋
         </motion.h1>
         <motion.p 
-          className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl text-center mb-8"
+          className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl text-center mb-4"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ scale: 1.02 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Hi, I&apos;m Arman Fathabadi, a passionate software engineer with a strong interest in web development.
+          I develop interactive web applications using modern programming languages 
+          <span className="font-semibold text-blue-500"> React, Next.js,</span> and <span className="font-semibold text-blue-500">Node.js</span>.
+        </motion.p>
+        <motion.p 
+          className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl text-center mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          whileHover={{ scale: 1.02 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+        >
+          My special skill is high-performance software design, encompassing attention to detail and user-friendly interfaces.
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4 }}
         >
-          <Button href="/projects">View My Work</Button>
+          <Button href="/projects">Explore My Projects</Button>
         </motion.div>
       </section>
     </main>
